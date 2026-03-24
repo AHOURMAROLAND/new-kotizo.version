@@ -1,0 +1,24 @@
+services:
+  kotizo_redis:
+    image: redis:7-alpine
+    container_name: kotizo_redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+    command: redis-server --maxmemory 256mb --maxmemory-policy allkeys-lru
+
+  kotizo_evolution:
+    image: atendai/evolution-api:latest
+    container_name: kotizo_evolution
+    ports:
+      - "8080:8080"
+    environment:
+      - AUTHENTICATION_API_KEY=kotizo-evolution-key-2026
+      - WEBHOOK_GLOBAL_URL=http://host.docker.internal:8000/api/whatsapp/webhook/
+      - WEBHOOK_GLOBAL_ENABLED=true
+    restart: unless-stopped
+    volumes:
+      - evolution_data:/evolution/instances
+
+volumes:
+  evolution_data:

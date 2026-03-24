@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+db.sqlite3
+media/
+logs/*.log
+*.egg-info/
+dist/
+build/
+.DS_Store
+firebase-credentials.json
+staticfiles/
