@@ -1,0 +1,40 @@
+{
+  "name": "kotizo-mobile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^3.0.1",
+    "@react-native-community/netinfo": "^12.0.1",
+    "@react-navigation/bottom-tabs": "^7.15.7",
+    "@react-navigation/native": "^7.2.0",
+    "@react-navigation/stack": "^7.8.7",
+    "axios": "^1.13.6",
+    "expo": "~55.0.8",
+    "expo-application": "~55.0.10",
+    "expo-constants": "~55.0.9",
+    "expo-device": "~55.0.10",
+    "expo-document-picker": "~55.0.9",
+    "expo-file-system": "~55.0.11",
+    "expo-image-picker": "~55.0.13",
+    "expo-linking": "~55.0.8",
+    "expo-notifications": "~55.0.13",
+    "expo-router": "~55.0.7",
+    "expo-status-bar": "~55.0.4",
+    "react": "19.2.0",
+    "react-native": "0.83.2",
+    "react-native-dotenv": "^3.4.11",
+    "react-native-gesture-handler": "^2.30.0",
+    "react-native-reanimated": "^4.2.3",
+    "react-native-safe-area-context": "^5.7.0",
+    "react-native-screens": "^4.24.0",
+    "react-native-vector-icons": "^10.3.0",
+    "zustand": "^5.0.12"
+  },
+  "private": true
+}
